@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>EDU-372</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/adbd4071ad.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <div class="form d-grid gap-2">
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary  h6 border-bottom">
+    
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary  h6 border-bottom mb-4">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ">
@@ -32,18 +34,341 @@
             </ol>
         </nav>
 
+        <div class="card-wrapper mb-3">
+            <div class="card">
+                <div class="card-body m-0 p-0">
+                    <div class="card-header">
+                        Входит в группы
+                    </div>
+                    <div class="list-group list-group-horizontal list-group-flush">
+                        <a href="#" class="list-group-item list-group-item list-group-item-primary border-0 bg-white px-4 py-3">group1</a>
+                        <a href="#" class="list-group-item list-group-item list-group-item-primary border-0 bg-white px-4 py-3">group2</a>
+                        <a href="#" class="list-group-item list-group-item list-group-item-primary border-0 bg-white px-4 py-3">group3</a>
+                        <a href="#" class="list-group-item list-group-item list-group-item-primary border-0 bg-white px-4 py-3">group4</a>
+                        <a href="#" class="list-group-item list-group-item list-group-item-primary border-0 bg-white px-4 py-3">group5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-body">
+
+            <div class="row-wrapper">
+                <div class="row ">
+                    <div class="col-4 ">
+                        <label for="blocked-input" class="form-label h6">Название</label>
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control " id="blocked-input" aria-label="Text input with dropdown button">
+                            <button class="btn btn-success dropdown-toggle" type="button"  data-bs-toggle="dropdown" id="dropdownMenuButton1" aria-expanded="false">Разблокировано</button>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <label for="description-input" class="form-label h6">Описание</label>
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-wrapper mt-3">
+                <div class="row">
+                        <div class="col-4">
+                            <label for="count-remark" class="form-label h6">Количество попыток ремаршрутизации</label>
+                            <div class="input-group input-group-sm">
+                                <button class="btn border" type="button" id="button-down">
+                                    <i class="fa-solid fa-down-long"></i>
+                                </button>
+                                <input type="text" class="form-control" id="count-remark" aria-label="Text input">
+                                <button class="btn border" type="button" id="button-up">
+                                    <i class="fa-solid fa-up-long"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-8">
+                            <label for="description-input" class="form-label h6">Причины ремаршрутизации</label>
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+
+            <div class="row-wrapper mt-3">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="network-input" class="form-label h6">Сеть</label>
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control " id="network-input" aria-label="Text input with dropdown button">
+                            <button class="btn dropdown-toggle border" type="button"  data-bs-toggle="dropdown" id="dropdownMenuButtonNetwork" aria-expanded="false"></button>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButtonNetwork">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="algoritm-input" class="form-label h6">Алгоритм</label>
+                                <div class="input-group input-group-sm">
+                                    <input type="text" class="form-control " id="algoritm-input" aria-label="Text input with dropdown button">
+                                    <button class="btn dropdown-toggle border" type="button"  data-bs-toggle="dropdown" id="dropdownMenuButtonAlgoritm" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButtonAlgoritm">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="rate-input" class="form-label h6">Тариф</label>
+                                <div class="input-group input-group-sm">
+                                    <input type="text" class="form-control " id="rate-input" aria-label="Text input">
+                                    <button class="btn dropdown-toggle border" type="button"  data-bs-toggle="dropdown" id="dropdownMenuButtonRate" aria-expanded="false"></button>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButtonRate">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-wrapper mt-3 ms-3">
+                <div class="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                        Anti Tromboling
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-wrapper mt-3">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">Ограничения</div>
+                            <div class="card-body pt-1">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="col-3 align-top pb-0"></th>
+                                            <th scope="col" class="  pb-0">Вх</th>
+                                            <th scope="col" class=" pb-0">Исх</th>
+                                            <th scope="col" class="  pb-0 ">Все</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Calls</th>
+                                            <td>
+                                                <div class="input-group input-group-sm ">
+                                                    <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CPS</th>
+                                            <td>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                                </div>
+                                            </td>
+                                            <td><div class="input-group input-group-sm">
+                                                <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                            </div></td>
+                                            <td><div class="input-group input-group-sm">
+                                                <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                            </div></td>
+                                            </tr>
+                                        <tr>
+                                            <th scope="row">AvgCPS</th>
+                                            <td>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                                </div>
+                                            </td>
+                                            <td><div class="input-group input-group-sm">
+                                                <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                            </div></td>
+                                            <td><div class="input-group input-group-sm">
+                                                <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                            </div></td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-header-container d-flex justify-content-between align-items-center">
+                                    <div>Фильтр</div>
+                                    <div class="btn-group" role="group" aria-label="Группа кнопок">
+                                        <button type="button" class="btn btn-sm bg-white border"><i class="fa-solid fa-plus"></i></button>
+                                        <button type="button" class="btn btn-sm bg-white border "><i class="fa-solid fa-minus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-1 mt-3 mb-3">
+                                <div class="row-wripper bg-success bg-opacity-10 border-top p-1">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="filter-container">
+                                                <div class="filter-rule">CgPN=.(0,22)</div>
+                                                <div class="filter-rule">INGW=gw*</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-sm text-primary"><i class="fa-solid fa-gear"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row-wripper bg-danger bg-opacity-10 border-top p-1">
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="filter-container">
+                                                <div class="filter-rule">CdPN=.(0,22)</div>
+                                                <div class="filter-rule">CgPC=.(0,22)</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="button" class="btn btn-sm text-primary"><i class="fa-solid fa-gear"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="card-wrapper">
         <div class="card">
             <div class="card-header">
-              Входит в группы
+                <div class="card-header-route-container d-flex justify-content-between align-items-center">
+                    <div>Список привязанных маршрутов</div>
+                    <div class="btn-group" role="group" aria-label="Группа кнопок">
+                        <button type="button" class="btn btn-sm bg-white border"><i class="fa-solid fa-plus"></i></button>
+                        <button type="button" class="btn btn-sm bg-white border "><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                </div>
             </div>
-            <div class="list-group list-group-horizontal">
-                <a href="#" class="list-group-item list-group-item-action ">Второй элемент ссылка</a>
-                <a href="#" class="list-group-item list-group-item-action">Третий элемент ссылка</a>
-                <a href="#" class="list-group-item list-group-item-action">Четвертый элемент ссылка</a>
-              </div>
-          </div>
-
+            <div class="card-body">
+                <div class="row-wrapper mt-3">
+                    <div class="row">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="col-1 pb-0"></th>
+                                    <th scope="col" class="col-2 pb-0">Название</th>
+                                    <th scope="col" class="col-3 pb-0">Статус</th>
+                                    <th scope="col" class="col-2 pb-0">Описание</th>
+                                    <th scope="col" class="col-2 pb-0">Приоритет</th>
+                                    <th scope="col" class="col-1 pb-0">Вес</th>
+                                    <th scope="col" class="col-1 pb-0"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></th>
+                                    <td>
+                                        <a class="link" href="#">route1</a>
+                                    </td>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CPS</th>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                        </div>
+                                    </td>
+                                    <td><div class="input-group input-group-sm">
+                                        <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                    </div></td>
+                                    <td><div class="input-group input-group-sm">
+                                        <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                    </div></td>
+                                    </tr>
+                                <tr>
+                                    <th scope="row">AvgCPS</th>
+                                    <td>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                        </div>
+                                    </td>
+                                    <td><div class="input-group input-group-sm">
+                                        <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                    </div></td>
+                                    <td><div class="input-group input-group-sm">
+                                        <input type="text" class="form-control " id="description-input" aria-label="Text input">
+                                    </div></td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
